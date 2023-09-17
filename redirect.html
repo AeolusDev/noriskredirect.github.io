@@ -2,6 +2,34 @@
     <head>
         <title>Redirect Page</title>
         <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh; /* Center vertically as well */
+        }
+
+        /* Style the label and input field */
+        label {
+            font-size: 18px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            margin: 5px;
+        }
+
+        /* Style the button */
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff; /* Blue color */
+            color: #fff; /* White text color */
+            border: none;
+            cursor: pointer;
+        }
             /* Center-align text within h1 and h2 */
             h1, h2 {
                 text-align: center;
@@ -13,7 +41,7 @@
         <h1>Redirection Page</h1>
         <h2>Enter the passcode or webauth to redirect to your destination</h2>
 
-        <label for="userInput">Enter Something:</label>
+        <label for="userInput">Enter Passcode:</label>
         <input type="text" id="userInput">
         <button id="submitButton">Submit</button>
 
