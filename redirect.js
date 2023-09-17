@@ -16,5 +16,6 @@ submitButton.addEventListener('click', function() {
             action: "checkpass",
             msg: "CorrectPass"
         })
+        console.log("Operation Complete!")
     }
 });
