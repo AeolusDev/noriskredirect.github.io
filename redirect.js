@@ -11,11 +11,11 @@ submitButton.addEventListener('click', function() {
     
     // Display the input value
     if(inputValue === decodedpass) {
-        window.history.back();
         chrome.runtime.sendMessage({
             action: "checkpass",
             msg: "CorrectPass"
         })
         console.log("Operation Complete!");
+        window.history.back();
     }
 });
